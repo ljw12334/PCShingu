@@ -1,0 +1,35 @@
+#cont {
+	display: flex;
+	
+}
+
+#profil-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	border: 1px solid lightgray;
+}
+#profil-name {
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+#sidebar {
+	width: 220px;
+	border-right: 1px solid lightgray;
+	padding-top: 20px;
+}
+
+#sidebar > div {
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+#sidebar > div > a {
+	font-size: 14px;
+}
+
+#sidebar > div:not(#profil-name):hover {
+	background-color: lightgray;
+}

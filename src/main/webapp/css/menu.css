@@ -1,0 +1,194 @@
+nav ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+nav ul li:nth-child(1) { flex-grow: 3; }
+nav ul li:nth-child(2) { flex-grow: 2; }
+nav ul li:nth-child(3) { flex-grow: 2; }
+nav ul li:nth-child(4) { flex-grow: 2; }
+nav ul li:nth-child(5) { flex-grow: 2; }
+nav ul li:nth-child(6) { flex-grow: 2; }
+nav ul li:nth-child(7) { flex-grow: 2; }
+
+.all-contents {
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 46px;
+	text-align: center;
+}
+
+.all-contents label {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+/* 전체 카테고리 */
+#all-contents-menu {
+	width: 1200px;
+	background-color: white;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border: 1px solid black;
+}
+
+#all-contents-menu table {
+	width: 100%;
+}
+
+#all-contents-menu table, th, td {
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 16px;
+}
+
+#all-contents-menu table th {
+	font-weight: bold;
+	padding: 8px;
+	border: 1px solid lightgrey;
+	background-color: rgb(240, 240, 240);
+}
+
+#all-contents-menu table td {
+	width: 16%;
+	vertical-align: top;
+	padding: 8px;
+	border: 1px solid lightgrey;
+}
+
+#all-contents-menu table td a {
+	text-decoration: none;
+}
+
+#all-contents-menu table td a:hover {
+	text-decoration: underline;
+}
+
+#all-contents-checkbox, #all-contents-checkbox-alt {
+	display: none;
+}
+
+
+
+/* 드롭다운 메뉴 */
+.dropdown {
+	position: relative;
+}
+
+.dropdown-menu {
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 46px;
+	text-align: center;
+}
+
+.dropdown-menu:hover {
+	color: var(--maincolor);
+}
+
+.dropdown-contents {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-contents a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown-contents a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-contents {
+	display: block;
+	border: 1px solid black;
+}
+
+
+
+/* 상단바 대체 요소 */
+#sticky-bar {
+	width: 1200px;
+	height: 48px;
+	margin: 0 auto;
+    display: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sticky-bar > form > .search-bar {
+	width: 500px;
+	height: 40px;
+	border-radius: 40px;
+	border: 2px solid var(--maincolor);
+	display: inline-block;
+}
+
+#sticky-bar > form > .search-bar > .tx-search {
+	font-size: 16px;
+	width: 441px;
+	margin-left:12px;
+	margin-top:5px;
+	padding: 4px;
+	border: 0;
+	outline: none;
+	float: left;
+}
+
+#sticky-bar > form > .search-bar > .bt-search {
+	width: 24px;
+	height: 24px;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url("../img/search.png");
+	filter: var(--maincolorfilter);
+	background-size: 24px 24px;
+	border: none;
+    font-size: 0;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+#sticky-bar > div > div {
+	margin-top: 8px;
+	display: inline-block;
+	margin-left: 16px;
+}
+
+#sticky-bar > div > div:first-child {
+	margin-left: 0px;
+}
+
+#sticky-bar > div > div > a > img {
+	width: 36px;
+	height: 36px;
+	border-radius: 8px;
+	filter: invert(10%) sepia(98%) saturate(0%) hue-rotate(266deg) brightness(106%) contrast(100%);
+}
+
+#sticky-bar-ham-area:after {
+	display: inline-block;
+	height: 100%;
+	content: "";
+	vertical-align: middle;
+}
+
+#sticky-bar-ham-area img {
+	vertical-align: middle;
+}

@@ -1,0 +1,195 @@
+/* header */
+header {
+	height: 54px;
+}
+
+header > .member-top {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+header > .member-top > div ul {
+	list-style-type: none;
+	padding-left: 0px;
+	float: right;
+}
+
+header > .member-top > div ul li {
+	display: inline;
+	border-left: 1px solid #c0c0c0;
+	padding: 0px 10px 0px 10px;
+	margin: 5px 0px 5px 0px;
+}
+
+header > .member-top > div ul li a:hover {
+	text-decoration: underline;
+}
+
+header > .member-top > div ul li:first-child {
+	border-left: none;
+}
+
+/* main */
+main {
+	display: flex;
+	justify-content: center;
+}
+
+#member-content {
+	margin-top: 60px;
+	margin-bottom: 200px;
+	width: 600px;
+}
+
+.form-buttons {
+	margin-top: 32px;
+	text-align: center;
+}
+
+#form-cancel {
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	background-color: grey;
+	cursor: pointer;
+}
+
+#form-submit {
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--maincolor);
+	cursor: pointer;
+	color: white;
+}
+
+.page-name {
+	padding: 8px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.input-area {
+	display: flex;
+	padding: 8px;
+	border-top: 1px solid lightgray;
+}
+.input-name { width: 120px; }
+
+.required {
+	color: red;
+}
+
+.title-space {
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.input-content input::-webkit-inner-spin-button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+/* 로그인 ======================================================== */
+/* 로그인 ======================================================== */
+/* 로그인 ======================================================== */
+/* 로그인 ======================================================== */
+
+.login-area {
+	width: 400px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+}
+
+.login-area > div > input {
+	width: 80%;
+	height: 40px;
+}
+
+.input-id {
+	border: 1px solid lightgray;
+	padding-left: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 16px;
+}
+
+.input-id:focus {
+	border: 1px solid black;
+}
+
+.input-pw {
+	border: 1px solid lightgray;
+	padding-left: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top: none;
+	font-size: 16px;
+}
+
+.input-pw:focus {
+	border: 1px solid black;
+}
+
+#login-form-submit {
+	width: 343px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--maincolor);
+	cursor: pointer;
+	color: white;
+}
+
+/* 아이디찾기, 비번찾기, 회원가입 안내*/
+
+.login-search {
+	margin-top: 20px;
+}
+
+.login-search ul {
+	list-style-type: none;
+	padding-left: 0px;
+	
+}
+
+.login-search ul li {
+	display: inline;
+	border-left: 1px solid #c0c0c0;
+	padding: 0px 10px 0px 10px;
+	margin: 5px 0px 5px 0px;
+	font-size: 14px;
+}
+
+.login-search ul li a {
+	font-size: 14px;
+}
+
+.login-search ul li a:hover {
+	text-decoration: underline;
+}
+
+.login-search ul li:first-child {
+	border-left: none;
+}
+
+.login-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

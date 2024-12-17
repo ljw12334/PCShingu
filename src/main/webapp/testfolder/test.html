@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="slider">
+		<div class="outer">
+			<div class="inner"><a href="#"><img src="1200x400.png" alt="item1"></a></div>
+			<div class="inner"><a href="#"><img src="1200x400.png" alt="item1"></a></div>
+			<div class="inner"><a href="#"><img src="1200x400.png" alt="item1"></a></div>
+			<div class="inner"><a href="#"><img src="1200x400.png" alt="item1"></a></div>
+		</div>	
+	</div>
+	<button class="bt">1</button>
+	<button class="bt">2</button>
+	<button class="bt">3</button>
+	<button class="bt">4</button>
+	
+	<script>
+		
+		const outer = document.querySelector(".outer");
+		const buttons = document.querySelectorAll(".bt");
+		
+		let selectNum = 0;
+		
+		outer.style.width = buttons.length * 1200 + "px";
+		for (let i = 0; i < buttons.length; i++) {
+			buttons[i].addEventListener("click", function() {
+				selectNum = i;
+				outer.style.transform = "translate(" + (-selectNum * 1200) + "px";
+			});
+		}
+	</script>
+</body>
+</html>

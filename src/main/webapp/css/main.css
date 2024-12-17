@@ -1,0 +1,98 @@
+main > .container {
+	display: grid;
+	grid-template-columns: 200px 400px 1fr 1fr 1fr;
+	grid-template-rows: 250px 250px;
+	border: 1px solid grey;
+	border-top: 2px solid black;
+	margin-bottom: 40px;
+}
+main > .container > .item:nth-child(1) {
+	grid-row: 1/ span 2;
+}
+main > .container > .item:nth-child(2) {
+	grid-row: 1/ span 2;
+}
+main > .container > .item {
+	border: 1px solid green;
+}
+
+
+main > .part-class {
+	display: flex;
+	border-top: 2px solid black;
+}
+/* 선택전 */
+main > .part-class > .item {
+	flex-grow: 1;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid lightgray;
+	padding: 8px;
+	cursor: pointer;
+}
+
+main > .part-class > .item:hover {
+	flex-grow: 1;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid lightgray;
+	padding: 8px;
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+main > .part-class > .item img {
+	width: 50px;
+	height: 50px;
+}
+main > .part-class > .item div {
+	font-size: 14px;
+	font-weight: bold;
+}
+/* 선택후 */
+main > .part-class > .item-selected {
+	flex-grow: 1;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid var(--maincolor);
+	padding: 8px;
+	background-color: var(--maincolor);
+}
+
+main > .part-class > .item-selected img {
+	width: 50px;
+	height: 50px;
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(92deg) brightness(102%) contrast(100%);
+}
+main > .part-class > .item-selected div {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+.title-space {
+	padding: 8px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.banner-thin {
+	width: 100%;
+	height: 120px;
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 8px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	
+	/* 테스트용 가짜 데이터 */
+	color: white;
+	background-color: darkblue;
+	text-align: center;
+	line-height: 120px;
+}

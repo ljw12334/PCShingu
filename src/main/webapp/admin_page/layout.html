@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>관리자 페이지</title>
+	<link rel="stylesheet" href="../css/variables.css">
+	<link rel="stylesheet" href="css/admin_page.css">
+</head>
+<body>
+<div id ="wrapper">
+	
+<div id="sidebar">
+	<div id="sidebar-top">
+		<a href="../index.jsp"><img src="../img/logo_white.png" alt="로고 이미지" class="logo"></a>
+		<img src="img/logo_admin_page.png" alt="관리자 로고 이미지" class="admin-logo"><br>
+		<form action="logout.jsp" method="post">
+			<div style="margin-left: 16px; margin-right: 16px; display: flex; align-items: center; justify-content: space-between; color:white;">
+				<div>관리자님</div>
+				<div><input type="submit" value="LOGOUT"></div> 
+			</div>	
+		</form>
+		
+		<a href="#"><div><img src="../img/test_128x128.png">메인</div></a>
+	</div>
+	<div id="scroll-area">
+		<div>
+			<div class="list-name">페이지 관리</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">배너 변경</div></a>
+		</div>
+		<div>
+			<div class="list-name">상품 관리-조립PC</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">게이밍PC</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">사무용PC</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">전문용PC</div></a>
+		</div>
+		<div>
+			<div class="list-name">상품 관리-PC주요부품</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">CPU</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">메인보드</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">RAM</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">그래픽카드</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">파워서플라이</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">SSD</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">HDD</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">케이스</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">팬/쿨러</div></a>
+		</div>
+		<div>
+			<div class="list-name">상품 관리-주변기기</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">모니터</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">키보드</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">마우스</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">스피커</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">외부 저장장치</div></a>
+		</div>
+		<div>
+			<div class="list-name">상품 관리-소프트웨어</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">OS</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">응용 소프트웨어</div></a>
+		</div>
+		<div>
+			<div class="list-name">회원 관리</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">주문내역 조회</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">회원정보 수정</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">비밀번호 초기화</div></a>
+		</div>
+		<div>
+			<div class="list-name">주문 관리</div>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">새 주문 조회</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">주문상태 변경</div></a>
+			<a href="#"><div class="list"><img src="../img/test_128x128.png">배송 완료된 주문 </div></a>
+		</div>
+		<br><br>
+	</div>
+</div>
+
+<div id="content">
+	<div class="top-bar">
+		<div>CPU 등록</div>
+	</div>
+	<div class="bottom-area">
+		<div class="management">
+			<form action="#" method="post">
+				<div class="input-area">
+					<div class="input-name">이름</div>
+					<div class="input-content">
+						<input type="text" name="name" class="long">
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">제조사</div>
+					<div class="input-content">
+						<select name="kind" class="short">
+							<option value="Intel">Intel</option>
+							<option value="AMD">AMD</option>
+						</select>
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">세대</div>
+					<div class="input-content">
+						<input type="text" name="gen" = class="middle">
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">라인</div>
+					<div class="input-content">
+						<input type="text" name="modifier" class="middle">
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">소켓</div>
+					<div class="input-content">
+						<input type="text" name="socket" class="middle">
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">코어 수</div>
+					<div class="input-content">
+						<input type="number" name="core" class="short">
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">쓰레드 수</div>
+					<div class="input-content">
+						<input type="number" name="thread" class="short">
+					</div>
+				</div>
+				<div class="input-area">
+					<div class="input-name">내장그래픽</div>
+					<div class="input-content">
+						<input type="radio" name="built-in-graphics" value="Y" checked="checked">탑재
+						<input type="radio" name="built-in-graphics" value="N">미탑재
+					</div>
+				</div>
+	
+				<input type="submit" value="등록">
+			</form>
+		</div>
+		
+		<div class="registed">
+			<form action="#" method="post">
+				<div class="search-bar">
+					<input type="text">
+					<input type="submit" value="검색">
+				</div>
+			</form>
+			<div class="list">
+				<div class="list-area">
+					<table>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+</body>
+</html>

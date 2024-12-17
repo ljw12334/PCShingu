@@ -1,0 +1,5 @@
+.delivery-list .item {
+	display: flex;
+	padding: 4px;
+	border: 1px solid lightgray;
+}

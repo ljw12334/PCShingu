@@ -1,0 +1,6 @@
+:root {
+	--maincolor: #94C948;
+	--maincolorpointed: #7AA63B;
+	--maincolorfilter: invert(74%) sepia(21%) saturate(1153%) hue-rotate(42deg) brightness(97%) contrast(85%);
+	--commonred: rgb(242, 52, 52);
+}
